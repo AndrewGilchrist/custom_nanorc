@@ -1,0 +1,10 @@
+## example for xsd files.
+##
+syntax "xsd" "\.(xsd)$"
+magic "XSD.*document text"
+color green  start="<" end=">"
+color cyan   "<[^> ]+"
+color cyan   ">"
+color yellow start="<!DOCTYPE" end="[/]?>"
+color yellow start="<!--" end="-->"
+color red    "&[^;]*;"
