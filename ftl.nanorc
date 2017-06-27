@@ -6,3 +6,6 @@ color cyan   ">"
 color yellow start="<!DOCTYPE" end="[/]?>"
 color yellow start="<!--" end="-->"
 color red    "&[^;]*;"
+## strings
+color yellow "['][^']*[^\\][']" "[']{3}.*[^\\][']{3}"
+color yellow "["][^"]*[^\\]["]" "["]{3}.*[^\\]["]{3}"
